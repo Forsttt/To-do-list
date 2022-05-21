@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+*,::before,::after {
+  box-sizing: inherit;
+}
+
+.body {
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+  background-color: #eee;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
