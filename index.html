@@ -23,17 +23,18 @@
       <h1>Lista zadań</h1>
     </header>
     <main>
-      <form class="form">
+      <form class="form js-form">
         <fieldset class="form__fieldset form__fieldset--header">
           <h2 class="header">Dodaj nowe zadanie</h2>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--input">
-          <input class="input" name="textbox" maxlength="80" placeholder="Co jest do zrobienia?">
+          <input class="input js-input" name="textbox" maxlength="80" placeholder="Co jest do zrobienia?">
           <button class="form__button">Dodaj zadanie</button>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--header">
           <h2 class="header">Lista</h2>
         </fieldset>
+        <div class="js-list">
         <fieldset class="form__fieldset form__fieldset--list">
           <ul class="form__list">
             <li class="form__list--table">
@@ -43,6 +44,7 @@
             </li>
           </ul>
         </fieldset>
+      </div>
     </main>
   </div>
 
