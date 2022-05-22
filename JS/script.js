@@ -19,7 +19,7 @@
 
     for(const task of tasks) {
       htmlString += `
-      <fieldset class="form__fieldset form__fieldset--list">
+      <fieldset class="form__fieldset--list">
       <ul class="form__list">
         <li class="form__list--table">
           <button class="button__done">✔</button>
