@@ -90,3 +90,7 @@
   max-width: 980px;
   box-shadow: 5px 5px 5px rgb(209, 209, 209);
  }
+
+ .task__done {
+   text-decoration: line-through;
+ }
