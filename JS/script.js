@@ -4,20 +4,23 @@
   }
 
   const tasks = [
-{
-  content: "ubrać się",
-  done: false },
+    {
+      content: "ubrać się",
+      done: false
+    },
 
-{
-  content: "umyć się",
-  done: true}, 
+    {
+      content: "umyć się",
+      done: true
+    },
   ];
+
 
 
   const render = () => {
     let htmlString = "";
 
-    for(const task of tasks) {
+    for (const task of tasks) {
       htmlString += `
       <fieldset class="form__fieldset--list">
       <ul class="form__list">
@@ -31,9 +34,26 @@
       </fieldset>
       `
     };
+    document.querySelector(".js-list").innerHTML = htmlString;
+    deleteTaskButton();
+  };
 
-  document.querySelector(".js-list").innerHTML = htmlString;
-  }
+  
+  const deleteTask = (index) => {
+    tasks.splice(index, 1);
+    render();
+  };
+
+  const deleteTaskButton = () => {
+    const deleteButton = document.querySelectorAll(".js-delete");
+    deleteButton.forEach((deleteButton, index) => {
+      deleteButton.addEventListener("click", () => {
+        deleteTask(index);
+      })
+    })
+  };
+
+
 
   const addNewTask = (newTaskContent) => {
     tasks.push({
@@ -47,22 +67,22 @@
     event.preventDefault();
 
     const newTaskContent = document.querySelector(".js-input").value.trim();
-    
-    if(newTaskContent === ""){
+
+    if (newTaskContent === "") {
       return;
     }
 
     addNewTask(newTaskContent);
-  }
+  };
 
-const init = () => {
-  hello();
-  render();
+  const init = () => {
+    hello();
+    render();
 
-  const formElement = document.querySelector(".js-form");
-  formElement.addEventListener("submit", onFormSubmit);
-};
+    const formElement = document.querySelector(".js-form");
+    formElement.addEventListener("submit", onFormSubmit);
+  };
 
-init();
+  init();
 
 }
