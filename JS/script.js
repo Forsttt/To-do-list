@@ -25,7 +25,7 @@
       <fieldset class="form__fieldset--list">
       <ul class="form__list">
         <li class= "form__list--table">
-          <button  class="button__done">✔</button>
+          <button  class="button__done js-done">✔</button>
           <span ${task.done ? " class=\"form__list--content task__done\" " : " class=\"form__list--content\" "}
           >${task.content}</span>
           <button class="button__delete js-delete">🗑️</button>
@@ -36,9 +36,10 @@
     };
     document.querySelector(".js-list").innerHTML = htmlString;
     deleteTaskButton();
+    taskDoneButton();
   };
 
-  
+
   const deleteTask = (index) => {
     tasks.splice(index, 1);
     render();
@@ -49,6 +50,20 @@
     deleteButton.forEach((deleteButton, index) => {
       deleteButton.addEventListener("click", () => {
         deleteTask(index);
+      })
+    })
+  };
+
+  const taskDone = (index) => {
+    tasks[index].done = !tasks[index].done
+    render();
+  }
+
+  const taskDoneButton = () => {
+    const taskDoneButton = document.querySelectorAll(".js-done");
+    taskDoneButton.forEach((taskDoneButton, index) => {
+      taskDoneButton.addEventListener("click", () => {
+        taskDone(index);
       })
     })
   };
