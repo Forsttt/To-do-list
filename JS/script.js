@@ -90,14 +90,22 @@
     }
 
     addNewTask(newTaskContent);
+    focusOnInput();
+    
   };
+
+  const focusOnInput = () => {
+    const NewTaskBox = document.querySelector(".js-input");
+    NewTaskBox.focus();
+  }
+
 
   const init = () => {
     hello();
     render();
-
     const formElement = document.querySelector(".js-form");
     formElement.addEventListener("submit", onFormSubmit);
+
   };
 
   init();
