@@ -24,10 +24,12 @@
       htmlString += `
       <fieldset class="form__fieldset--list">
       <ul class="form__list">
-        <li class= "form__list--table">
-          <button  class="button__done js-done">✔</button>
-          <span ${task.done ? " class=\"form__list--content task__done\" " : " class=\"form__list--content\" "}
-          >${task.content}</span>
+        <li class="form__list--table">
+          <button class="button__done js-done">✔</button>
+          <span
+            class="form__list--content ${task.done ? "task__done" : ""}">
+           ${task.content}
+          </span>
           <button class="button__delete js-delete">🗑️</button>
         </li>
       </ul>

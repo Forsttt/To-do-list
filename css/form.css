@@ -43,6 +43,20 @@
   border-radius: 3px;
 }
 
+@media (max-width:767px) {
+  .form__fieldset--input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .form__button {
+    max-width: 200px;
+    width: 100%;
+    margin: 5px;
+  }
+}
+
 .form__list {
  list-style: none;
  padding: 0;
