@@ -59,7 +59,7 @@
   const toggleTaskDone = (index) => {
     tasks[index].done = !tasks[index].done
     render();
-  }
+  };
 
   const taskDoneButton = () => {
     const taskDoneButton = document.querySelectorAll(".js-done");
@@ -98,7 +98,7 @@
     const NewTaskBox = document.querySelector(".js-input");
     NewTaskBox.focus();
     NewTaskBox.value = "";
-  }
+  };
 
 
   const init = () => {
@@ -111,4 +111,4 @@
 
   init();
 
-}
+};
