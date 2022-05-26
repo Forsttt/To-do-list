@@ -15,8 +15,6 @@
     },
   ];
 
-
-
   const render = () => {
     let htmlString = "";
 
@@ -40,7 +38,6 @@
     deleteTaskButton();
     taskDoneButton();
   };
-
 
   const deleteTask = (index) => {
     tasks.splice(index, 1);
@@ -70,8 +67,6 @@
     })
   };
 
-
-
   const addNewTask = (newTaskContent) => {
     tasks.push({
       content: newTaskContent,
@@ -91,7 +86,6 @@
 
     addNewTask(newTaskContent);
     focusOnInput();
-
   };
 
   const focusOnInput = () => {
@@ -100,15 +94,12 @@
     NewTaskBox.value = "";
   };
 
-
   const init = () => {
     hello();
     render();
     const formElement = document.querySelector(".js-form");
     formElement.addEventListener("submit", onFormSubmit);
-
   };
 
   init();
-
 };
