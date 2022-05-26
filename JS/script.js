@@ -56,7 +56,7 @@
     })
   };
 
-  const taskDone = (index) => {
+  const toggleTaskDone = (index) => {
     tasks[index].done = !tasks[index].done
     render();
   }
@@ -65,7 +65,7 @@
     const taskDoneButton = document.querySelectorAll(".js-done");
     taskDoneButton.forEach((taskDoneButton, index) => {
       taskDoneButton.addEventListener("click", () => {
-        taskDone(index);
+        toggleTaskDone(index);
       })
     })
   };
