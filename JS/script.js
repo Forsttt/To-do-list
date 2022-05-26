@@ -97,6 +97,7 @@
   const focusOnInput = () => {
     const NewTaskBox = document.querySelector(".js-input");
     NewTaskBox.focus();
+    NewTaskBox.value = "";
   }
 
 
