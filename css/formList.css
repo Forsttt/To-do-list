@@ -50,8 +50,11 @@
     max-width: 40px;
     height: 40px;
   }
+
+  .button__delete:hover {
+    background-color: rgb(250, 49, 42);
+  }
   
- 
   .task__done {
     text-decoration: line-through;
   }

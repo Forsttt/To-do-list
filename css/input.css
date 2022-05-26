@@ -20,6 +20,10 @@
   border-radius: 3px;
 }
 
+.form__button:hover {
+  background-color: rgb(14, 177, 177);
+}
+
 @media (max-width:767px) {
   .form__fieldset--input {
     display: flex;

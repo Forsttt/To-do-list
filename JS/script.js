@@ -25,7 +25,7 @@
       <fieldset class="form__fieldset--list">
       <ul class="form__list">
         <li class="form__list--table">
-          <button class="button__done js-done">✔</button>
+          <button class="button__done js-done">${task.done ? " ✔" : " "}</button>
           <span
             class="form__list--content ${task.done ? "task__done" : ""}">
            ${task.content}
@@ -91,7 +91,7 @@
 
     addNewTask(newTaskContent);
     focusOnInput();
-    
+
   };
 
   const focusOnInput = () => {
