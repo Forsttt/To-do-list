@@ -4,15 +4,6 @@
   }
 
   const tasks = [
-    {
-      content: "ubrać się",
-      done: false
-    },
-
-    {
-      content: "umyć się",
-      done: true
-    },
   ];
 
   const render = () => {
