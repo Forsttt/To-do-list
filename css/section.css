@@ -1,10 +1,12 @@
 .section {
   margin: 15px;
   background-color: white;
+  box-shadow: 1px 1px 10px rgb(201, 201, 201);;
 }
 
 .section__header {
   padding: 20px;
   font-size: 20px;
+  font-weight: 1000;
   border-bottom: 1px solid rgb(197, 197, 197);
 }

@@ -12,9 +12,11 @@ html {
   width: 100%;
   padding: 10px;
   background-color: #eee;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  word-break: break-word;
 }
 
 .header {
   padding: 0 15px;
+  font-size: 20px;
 }

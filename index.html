@@ -12,38 +12,34 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/section.css" rel="stylesheet">
   <link href="css/form.css" rel="stylesheet">
-  <link href="css/input.css" rel="stylesheet">
-  <link href="css/formList.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/list.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <script src="JS/script.js" defer></script>
   <title>To-do-list</title>
 </head>
 
 <body class="body">
-    <header class="header">
-      <h1>Lista zadań</h1>
-    </header>
-    <main>
-      <section class="section">
-        <header class="section__header">Dodaj nowe zadanie</header>
-          <form class="form">
-              <input class="input js-input" name="textbox" maxlength="80" placeholder="Co jest do zrobienia?">
-          <button class="form__button">Dodaj zadanie</button>
-        </form>
-      </section>
+  <header class="header">
+    <h1>Lista zadań</h1>
+  </header>
+  <main>
+    <section class="section">
+      <header class="section__header">Dodaj nowe zadanie</header>
+      <form class="form js-form">
+        <input class="form__input js-input" name="textbox" maxlength="80" placeholder="Co jest do zrobienia?">
+        <button class="form__button">Dodaj zadanie</button>
+      </form>
+    </section>
 
-      <section class="section">
-          <h2 class="header">Lista</h2>
-        <div class="js-list">
-          
-        </div>
-      </section>
-    </main>
+    <section class="section">
+      <header class="section__header">Lista</header>
+      <ul class="list js-list">
+
+      </ul>
+    </section>
+  </main>
 </body>
 
 </html>
