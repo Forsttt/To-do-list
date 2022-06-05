@@ -1,28 +1,19 @@
 {
-  const hello = () => {
-    console.log("Witam :)")
-  }
-
-  const tasks = [
-  ];
+  const tasks = [];
 
   const render = () => {
     let htmlString = "";
 
     for (const task of tasks) {
       htmlString += `
-      <fieldset class="">
-      <ul class="">
-        <li class="">
-          <button class=""</button>
-          <span
-            class="">
-           ${task.content}
-          </span>
-          <button class="">🗑️</button>
+        <li class="list__item">
+          <button class="list__button js-done">${task.done ? "✔" : ""}</button>
+            <span
+            class="list__content ${task.done ? "markedAsDone" : " "}">
+              ${task.content}
+            </span>
+          <button class="list__button list__button--delete js-delete">🗑️</button>
         </li>
-      </ul>
-      </fieldset>
       `
     };
     document.querySelector(".js-list").innerHTML = htmlString;
@@ -86,7 +77,6 @@
   };
 
   const init = () => {
-    hello();
     render();
     const formElement = document.querySelector(".js-form");
     formElement.addEventListener("submit", onFormSubmit);
