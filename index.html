@@ -10,6 +10,7 @@
   <meta property="og:image" content="pictures/To-do-list2.jpg" />
   <link rel="icon" href="pictures/icon.png">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/section.css" rel="stylesheet">
   <link href="css/form.css" rel="stylesheet">
   <link href="css/input.css" rel="stylesheet">
   <link href="css/formList.css" rel="stylesheet">
@@ -24,28 +25,25 @@
 </head>
 
 <body class="body">
-  <div class="container">
-    <header>
+    <header class="header">
       <h1>Lista zadań</h1>
     </header>
     <main>
-      <form class="form js-form">
-        <fieldset class="form__fieldset form__fieldset--header">
-          <h2 class="header">Dodaj nowe zadanie</h2>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--input">
-          <input class="input js-input" name="textbox" maxlength="80" placeholder="Co jest do zrobienia?">
+      <section class="section">
+        <header class="section__header">Dodaj nowe zadanie</header>
+          <form class="form">
+              <input class="input js-input" name="textbox" maxlength="80" placeholder="Co jest do zrobienia?">
           <button class="form__button">Dodaj zadanie</button>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--header">
+        </form>
+      </section>
+
+      <section class="section">
           <h2 class="header">Lista</h2>
-        </fieldset>
         <div class="js-list">
           
         </div>
+      </section>
     </main>
-  </div>
-
 </body>
 
 </html>

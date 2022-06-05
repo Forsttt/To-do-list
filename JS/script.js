@@ -11,15 +11,15 @@
 
     for (const task of tasks) {
       htmlString += `
-      <fieldset class="form__fieldset--list">
-      <ul class="form__list">
-        <li class="form__list--table">
-          <button class="button__done js-done">${task.done ? " ✔" : " "}</button>
+      <fieldset class="">
+      <ul class="">
+        <li class="">
+          <button class=""</button>
           <span
-            class="form__list--content ${task.done ? "task__done" : ""}">
+            class="">
            ${task.content}
           </span>
-          <button class="button__delete js-delete">🗑️</button>
+          <button class="">🗑️</button>
         </li>
       </ul>
       </fieldset>
