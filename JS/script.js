@@ -17,8 +17,8 @@
       `
     };
     document.querySelector(".js-list").innerHTML = htmlString;
-    deleteTaskButton();
-    taskDoneButton();
+    bindDeleteTaskButton();
+    bindTaskDoneButton();
   };
 
   const deleteTask = (index) => {
@@ -26,7 +26,7 @@
     render();
   };
 
-  const deleteTaskButton = () => {
+  const bindDeleteTaskButton = () => {
     const deleteButton = document.querySelectorAll(".js-delete");
     deleteButton.forEach((deleteButton, index) => {
       deleteButton.addEventListener("click", () => {
@@ -40,7 +40,7 @@
     render();
   };
 
-  const taskDoneButton = () => {
+  const bindTaskDoneButton = () => {
     const taskDoneButton = document.querySelectorAll(".js-done");
     taskDoneButton.forEach((taskDoneButton, index) => {
       taskDoneButton.addEventListener("click", () => {
