@@ -9,7 +9,8 @@
 .form__input {
   padding: 10px;
   width: 100%;
-  border:2px solid rgb(201, 201, 201)
+  border:2px solid rgb(201, 201, 201);
+  font-family: inherit;
 }
 
 @media(max-width:767px) {
@@ -24,6 +25,7 @@
   color: white;
   background-color: teal;
   border: none;
+  font-family: inherit;
 }
 
 .form__button:hover {
