@@ -11,12 +11,34 @@
   border-bottom: 1px solid rgb(218, 213, 213);
 }
 
+.list__header {
+  display: grid;
+  grid-template-columns: 2fr auto 1fr;
+}
+
+  @media(max-width:767px) {
+    .list__header {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  }
+
+.list__allTaskButton {
+  border: none;
+  color: teal;
+  background-color: white;
+  font-size:  16px;
+  font-weight: 500;
+  font-family: inherit;
+}
+
 .list__button {
   height: 30px;
   width: 30px;
   border: none;
   background-color: green;
   color: white;
+  transition: 1s;
 }
 
 .list__content {
@@ -32,7 +54,7 @@
 }
 
 .list__button--delete:hover {
-  background-color: rgb(221, 10, 10);
+  background-color: rgb(236, 11, 11);
 }
 
 .markedAsDone {
