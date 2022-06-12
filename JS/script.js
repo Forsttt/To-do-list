@@ -1,7 +1,15 @@
 {
   const tasks = [];
+  let hideTaskButtons = false;
 
   const render = () => {
+    renderTaskButtons();
+    renderTasks();
+    bindDeleteTaskButton();
+    bindTaskDoneButton();
+  };
+
+  const renderTasks = () => {
     let htmlString = "";
 
     for (const task of tasks) {
@@ -17,9 +25,19 @@
       `
     };
     document.querySelector(".js-list").innerHTML = htmlString;
-    bindDeleteTaskButton();
-    bindTaskDoneButton();
   };
+
+    const renderTaskButtons = () => {
+      let htmlString = "";
+      {
+          htmlString += 
+          `
+          <button class="list__allTaskButton">pokaż ukończone</button>
+          <button class="list__allTaskButton">ukończ wszystkie</button>
+          `
+        };
+        document.querySelector(".js-allTaskButtons").innerHTML = htmlString;
+    };
 
   const deleteTask = (index) => {
     tasks.splice(index, 1);

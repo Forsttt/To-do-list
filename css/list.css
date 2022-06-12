@@ -13,7 +13,7 @@
 
 .list__header {
   display: grid;
-  grid-template-columns: 2fr auto 1fr;
+  grid-template-columns: 2fr auto;
 }
 
   @media(max-width:767px) {
