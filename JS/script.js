@@ -1,12 +1,17 @@
 {
   const tasks = [];
-  let hideTaskButtons = false;
+  let hideTaskButtons = true;
+  console.log(hideTaskButtons)
+  
 
   const render = () => {
     renderTaskButtons();
     renderTasks();
+  
     bindDeleteTaskButton();
     bindTaskDoneButton();
+   
+    
   };
 
   const renderTasks = () => {
@@ -28,16 +33,25 @@
   };
 
     const renderTaskButtons = () => {
-      let htmlString = "";
-      {
-          htmlString += 
-          `
-          <button class="list__allTaskButton">pokaż ukończone</button>
-          <button class="list__allTaskButton">ukończ wszystkie</button>
-          `
-        };
-        document.querySelector(".js-allTaskButtons").innerHTML = htmlString;
+      const listButtons = document.querySelector(".js-allTaskButtons")
+      if(!tasks.length) {
+      listButtons.innerHTML = "";
+      }
+      else  {
+      listButtons.innerHTML = 
+      `
+      <button class="list__allTaskButton">pokaż ukończone</button>
+      <button class="list__allTaskButton">ukończ wszystkie</button>
+      `
     };
+        
+    };
+
+    const taskAreEmpty = () => {
+    }
+
+      
+  
 
   const deleteTask = (index) => {
     tasks.splice(index, 1);
