@@ -11,6 +11,10 @@
   border-bottom: 1px solid rgb(218, 213, 213);
 }
 
+.list__item--hidden {
+  display: none;
+}
+
 .list__header {
   display: grid;
   grid-template-columns: 2fr auto;
@@ -27,9 +31,13 @@
   border: none;
   color: teal;
   background-color: white;
-  font-size:  16px;
+  font-size:  18px;
   font-weight: 500;
   font-family: inherit;
+}
+
+.list__allTaskButton:disabled {
+ color: rgb(156, 156, 156);
 }
 
 .list__button {
