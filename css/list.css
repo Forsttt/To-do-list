@@ -24,6 +24,7 @@
     .list__header {
       grid-template-columns: 1fr;
       grid-gap: 10px;
+      align-self: center;
     }
   }
 
@@ -34,6 +35,17 @@
   font-size:  18px;
   font-weight: 500;
   font-family: inherit;
+}
+
+.list__allTaskButton:hover {
+  transition: 1s;
+  color: rgb(9, 207, 207);
+}
+
+@media(max-width:767px) {
+  .allTasksButtons {
+    display: grid;
+  }
 }
 
 .list__allTaskButton:disabled {
