@@ -23,7 +23,7 @@
   @media(max-width:767px) {
     .list__header {
       grid-template-columns: 1fr;
-      grid-gap: 10px;
+      grid-gap: 15px;
       align-self: center;
     }
   }
@@ -45,7 +45,7 @@
 @media(max-width:767px) {
   .allTasksButtons {
     display: grid;
-    grid-gap: 5px
+    grid-gap: 10px
   }
 }
 
