@@ -45,6 +45,7 @@
 @media(max-width:767px) {
   .allTasksButtons {
     display: grid;
+    grid-gap: 5px
   }
 }
 
