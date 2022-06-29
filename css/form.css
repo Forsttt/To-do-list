@@ -4,21 +4,21 @@
   display: grid;
   grid-template-columns: 4fr 1fr ;
   grid-gap: 20px;
-}
+};
 
 .form__input {
   padding: 10px;
   width: 100%;
   border:2px solid rgb(201, 201, 201);
   font-family: inherit;
-}
+};
 
 @media(max-width:767px) {
   .form {
     grid-template-columns: auto;
     grid-gap: 10px;
-  }
-}
+  };
+};
 
 .form__button {
   padding: 10px;
@@ -27,12 +27,12 @@
   border: none;
   font-family: inherit;
   transition: 1s;
-}
+};
 
 .form__button:hover {
   background-color: rgb(10, 177, 177);
   transform: scale(1.2);
-}
+};
 
 @media (max-width:767px) {
   .form__button {
@@ -40,5 +40,5 @@
   }
   .form__button:hover {
     transform: scale(105%);
-  }
-}
+  };
+};

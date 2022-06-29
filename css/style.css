@@ -1,10 +1,10 @@
 html {
   box-sizing: border-box;
-}
+};
 
 *,::before,::after {
   box-sizing: inherit;
-}
+};
 
 .body {
   margin: auto;
@@ -14,9 +14,9 @@ html {
   background-color: #eee;
   font-family: 'Montserrat', sans-serif;
   word-break: break-word;
-}
+};
 
 .header {
   padding: 0 15px;
   font-size: 20px;
-}
+};
