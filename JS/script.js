@@ -35,7 +35,7 @@
         `
       <button
         class="list__allTaskButton js-hideDoneTasks">
-          ${hideTasks ? "Pokaż ukończone" : "Urkyj ukończone"}
+          ${hideTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
       </button>
       <button
         class="list__allTaskButton js-allTasksDone"
