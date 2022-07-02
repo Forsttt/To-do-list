@@ -33,8 +33,8 @@
     else {
       listButtons.innerHTML =
         `
-      <button class="list__allTaskButton js-hideDoneTasks">${hideTasks ? "pokaż ukończone" : "urkyj ukończone"}</button>
-      <button class="list__allTaskButton js-allTasksDone" ${tasks.every(({ done }) => done) ? "disabled" : ""}>ukończ wszystkie</button>
+      <button class="list__allTaskButton js-hideDoneTasks">${hideTasks ? "Pokaż ukończone" : "Urkyj ukończone"}</button>
+      <button class="list__allTaskButton js-allTasksDone" ${tasks.every(({ done }) => done) ? "disabled" : ""}>Ukończ wszystkie</button>
       `
     };
   };
