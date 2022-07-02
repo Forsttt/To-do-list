@@ -17,7 +17,7 @@
 
 .list__header {
   display: grid;
-  grid-template-columns: 2fr auto;
+  grid-template-columns: 1fr auto;
 }
 
   @media(max-width:767px) {
@@ -35,10 +35,10 @@
   font-size:  18px;
   font-weight: 500;
   font-family: inherit;
+  transition: 1s;
 }
 
 .list__allTaskButton:hover {
-  transition: 1s;
   color: rgb(9, 207, 207);
 }
 
